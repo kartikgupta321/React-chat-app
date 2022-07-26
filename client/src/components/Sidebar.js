@@ -21,10 +21,10 @@ export default function Sidebar({ id }) {
     <div style={{ width: '250px' }} className="d-flex flex-column">
       <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
         <Nav variant="tabs" className="justify-content-center ">
-          <Nav.Item>
+          <Nav.Item style={{"cursor" : "pointer"}}>
             <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item style={{"cursor" : "pointer"}}>
             <Nav.Link eventKey={CONTACTS_KEY}>Contacts</Nav.Link>
           </Nav.Item>
         </Nav>
