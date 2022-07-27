@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Kartik Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.4.0",
+    "cors": "^2.8.5",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
