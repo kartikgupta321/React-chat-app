@@ -12,8 +12,11 @@ export function SocketProvider({ id, children }) {
 
   useEffect(() => {
     const newSocket = io(
-      'http://localhost:5000',
+      'https://kartik-react-chat-app-server.herokuapp.com/',
       { query: { id },
+      extraHeaders: {
+        "my-custom-header": "*"
+      }
      },
     )
     setSocket(newSocket)
